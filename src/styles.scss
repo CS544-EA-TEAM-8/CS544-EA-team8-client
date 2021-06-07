@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: #b8daff;
+}
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+//.app-menu-button{}
+
+.form-container {
+    padding: 12px;
+}
+
+// .form-card {
+//    // width: 600px;
+// }
+
+.form-card-header {
+    color: #2f589b;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+// .form-card-content {
+// }
+
+.form-action-bar {
+    display: flex !important;
+    justify-content: flex-end;
+}
+.form-card-button {
+    ::ng-deep .mat-button-wrapper {
+        display: flex;
+    }
+}
+.fill-remaning-area {
+    flex: 1 1 auto;
+}
+.form-process-spinner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.error-div {
+    margin-top: 10px;
+    //max-width: 500px;
+}

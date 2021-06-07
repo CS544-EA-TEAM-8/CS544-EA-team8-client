@@ -1,0 +1,7 @@
+<mat-form-field [formGroup]="gd.control" appearance="outline">
+    <mat-label>{{label|| (field|titlecase)}}</mat-label>
+    <input matInput [type]="type" [formControlName]="field" [maxlength]="maxlength" [required]="mandatory">
+    <mat-error *ngIf="!!mandatory && !!gd.control?.get(field)?.errors?.required">
+        {{(label||(field|titlecase)) + ' is required'}}
+    </mat-error>
+</mat-form-field>

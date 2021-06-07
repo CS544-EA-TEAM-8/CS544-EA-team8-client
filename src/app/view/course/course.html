@@ -1,0 +1,14 @@
+<form [formGroup]="fg" class="form-container" (ngSubmit)="onSubmit()">
+    <mat-card class="form-card">
+        <mat-card-header>
+            <mat-card-title class="form-card-header">Course</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="form-card-content" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="start"
+            fxLayoutGap="5px grid">
+            <form-input field="code" [mandatory]="true"></form-input>
+            <form-input field="abbreviation" [mandatory]="true"></form-input>
+            <form-input field="name" [mandatory]="true"></form-input>
+            <form-input field="description" [mandatory]="true"></form-input>
+        </mat-card-content>
+    </mat-card>
+</form>

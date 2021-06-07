@@ -1,0 +1,27 @@
+<form [formGroup]="fg" class="form-container login-container" (ngSubmit)="onSubmit()">
+    <mat-card class="form-card">
+        <mat-card-header class="form-card-header">
+            <mat-card-title>Login</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="form-card-content" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="start"
+            fxLayoutGap="5px grid">
+            <form-input field="username" [mandatory]="true"></form-input>
+            <form-input field="password" type="password" [mandatory]="true"></form-input>
+        </mat-card-content>
+        <mat-card-actions>
+            <div class="form-action-bar">
+                <button mat-raised-button class="form-card-button" color="primary" type="submit"
+                    [disabled]="busy||!fg.valid">
+                    <span class="fill-remaning-area">Login</span>
+                    <div *ngIf="busy" class="form-process-spinner">
+                        <mat-spinner [diameter]="30"></mat-spinner>
+                    </div>
+                </button>
+            </div>
+            <div [@fold] *ngIf="error" class="error-div alert alert-danger text-center">
+                {{error}}
+            </div>
+
+        </mat-card-actions>
+    </mat-card>
+</form>

@@ -1,0 +1,11 @@
+<mat-table [dataSource]="dataSource$|async" class="entity-table">
+
+    <ng-container *ngFor="let column of entityColumns" [matColumnDef]="column.field">
+        <mat-header-cell *matHeaderCellDef class="entity-header-cell">{{column.header}}</mat-header-cell>
+        <mat-cell *matCellDef="let element">
+            {{element[column.field]}} </mat-cell>
+    </ng-container>
+    
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+</mat-table>

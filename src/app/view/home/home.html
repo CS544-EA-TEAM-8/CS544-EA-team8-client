@@ -1,0 +1,4 @@
+<mat-toolbar>
+    <button mat-button class="app-menu-button" *ngFor="let i of menuItems" [routerLink]="i.routerLink">{{i.label}}</button>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
