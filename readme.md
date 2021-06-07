@@ -3,7 +3,8 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
 
 ## Demo
-you can run demo [here](https://cs544-ea-team-8.github.io/CS544-EA-team8-client)
+you can run demo <a href="https://cs544-ea-team-8.github.io/CS544-EA-team8-client" target="_blank">here</a>
+ 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
